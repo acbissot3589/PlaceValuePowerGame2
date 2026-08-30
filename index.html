@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Place Value Adventures</title>
+<style>
+:root{--ink:#172033;--muted:#536174;--paper:#fffdf7;--panel:#f5efe0;--accent:#6b4eff;--accent2:#e9e1ff;--border:#cfc5ad}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:linear-gradient(#eef2f7,#fff);font-family:Arial,Helvetica,sans-serif;color:var(--ink)}
+.wrap{max-width:850px;margin:0 auto;padding:28px 18px}
+.card{background:var(--paper);border:2px solid var(--border);border-radius:26px;padding:32px;text-align:center;box-shadow:0 7px 24px rgba(0,0,0,.08)}
+.badge{display:inline-block;background:var(--ink);color:#fff;padding:8px 16px;border-radius:999px;font-weight:900;font-size:.9rem}
+h1{font-size:clamp(2.2rem,7vw,4rem);line-height:1;margin:16px 0 6px;font-weight:900}
+.subtitle{font-size:1.15rem;color:var(--muted);line-height:1.5;max-width:650px;margin:0 auto 25px}
+.adventures{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}
+.adventure{background:#fff;border:2px solid var(--border);border-radius:20px;padding:22px}
+.icon{font-size:3rem}.adventure h2{font-size:1.35rem;margin:8px 0}.adventure p{color:var(--muted);line-height:1.45;min-height:68px}
+a{display:inline-block;text-decoration:none;background:var(--accent);color:#fff;font-weight:900;padding:13px 20px;border-radius:13px;min-height:48px}
+a:focus{outline:3px solid var(--accent2);outline-offset:3px}
+.remember{margin-top:25px;background:var(--panel);border-radius:16px;padding:15px;font-weight:800}
+.footer{margin-top:18px;color:var(--muted);font-size:.9rem}
+@media(max-width:620px){.adventures{grid-template-columns:1fr}.card{padding:22px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<main class="card">
+<div class="badge">⚔️ PLACE VALUE ADVENTURES</div>
+<h1>Choose Your Adventure!</h1>
+<p class="subtitle">Practice comparing and ordering 3-digit numbers using <b>hundreds, tens, and ones</b>. Choose the adventure your teacher assigned to you.</p>
+<section class="adventures" aria-label="Choose an activity">
+<div class="adventure">
+<div class="icon">⚔️</div>
+<h2>Place Value Power</h2>
+<p>Regular version with more challenging compare-and-order missions.</p>
+<a href="Place_Value_Power_Regular.html">Start Place Value Power →</a>
+</div>
+<div class="adventure">
+<div class="icon">🛡️</div>
+<h2>Place Value Adventure</h2>
+<p>Adapted version with extra scaffolding and place-value hints.</p>
+<a href="Place_Value_Adventure_Adapted.html">Start Place Value Adventure →</a>
+</div>
+</section>
+<div class="remember">💡 Remember: <b>Hundreds → Tens → Ones</b></div>
+<div class="footer">Follow your teacher's directions for which adventure to complete.</div>
+</main>
+</div>
+</body>
+</html>
